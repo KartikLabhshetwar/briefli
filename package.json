@@ -26,6 +26,14 @@
   ],
   "author": "",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KartikLabhshetwar/briefli.git"
+  },
+  "homepage": "https://github.com/KartikLabhshetwar/briefli#readme",
+  "bugs": {
+    "url": "https://github.com/KartikLabhshetwar/briefli/issues"
+  },
   "files": [
     "dist",
     "bin",
