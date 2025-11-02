@@ -1,0 +1,23 @@
+# Source files
+src/
+tsconfig.json
+
+# Development files
+tests/
+*.log
+.DS_Store
+*.swp
+*.swo
+*~
+.env.local
+
+# Git
+.git/
+.gitignore
+
+# Documentation that's not needed (README.md will be included automatically)
+TESTING.md
+
+# Node
+node_modules/
+

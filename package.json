@@ -1,0 +1,49 @@
+{
+  "name": "briefli",
+  "version": "0.1.0",
+  "description": "A GitHub README generator using Groq API with OpenAI's gpt-oss-120b model",
+  "main": "dist/index.js",
+  "bin": {
+    "briefli": "./bin/briefli"
+  },
+  "scripts": {
+    "build": "tsc && npm run copy-scripts",
+    "copy-scripts": "mkdir -p dist/analyzer/scripts && cp -r src/analyzer/scripts/* dist/analyzer/scripts/",
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node src/cli/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "readme",
+    "generator",
+    "groq",
+    "ai",
+    "documentation",
+    "readme-generator",
+    "cli",
+    "github",
+    "automation"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@clack/prompts": "^0.11.0",
+    "groq-sdk": "^0.34.0",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/shelljs": "^0.8.15",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

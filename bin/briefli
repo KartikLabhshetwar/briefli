@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+// Execute the CLI
+const { CLI } = require('../dist/cli/index.js');
+
+// Run CLI
+const cli = new CLI();
+cli.run().catch((error) => {
+  console.error('\n❌ Fatal error:', error instanceof Error ? error.message : String(error));
+  process.exit(1);
+});
