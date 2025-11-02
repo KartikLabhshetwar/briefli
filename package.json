@@ -1,6 +1,6 @@
 {
   "name": "briefli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A GitHub README generator using Groq API with OpenAI's gpt-oss-120b model",
   "main": "dist/index.js",
   "bin": {
